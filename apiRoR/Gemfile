@@ -6,7 +6,6 @@ gem 'rails', '4.0.0'
 # Use sqlite3 as the database for Active Record
 gem "mongoid", "~> 4.0.0"
 gem 'bson_ext'
-gem 'devise'
 #gem 'mongoid_rails_migrations'
 gem 'rack-cors', :require => 'rack/cors'
 # Use SCSS for stylesheets

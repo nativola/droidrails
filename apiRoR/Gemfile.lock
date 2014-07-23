@@ -26,7 +26,6 @@ GEM
       thread_safe (~> 0.1)
       tzinfo (~> 0.3.37)
     arel (4.0.2)
-    bcrypt (3.1.7)
     bson (2.3.0)
     bson_ext (1.5.1)
     builder (3.1.4)
@@ -38,12 +37,6 @@ GEM
       execjs
     coffee-script-source (1.7.1)
     connection_pool (2.0.0)
-    devise (3.2.4)
-      bcrypt (~> 3.0)
-      orm_adapter (~> 0.1)
-      railties (>= 3.2.6, < 5)
-      thread_safe (~> 0.1)
-      warden (~> 1.2.3)
     erubis (2.7.0)
     execjs (2.2.1)
     hike (1.2.3)
@@ -72,7 +65,6 @@ GEM
     multi_json (1.10.1)
     optionable (0.2.0)
     origin (2.1.1)
-    orm_adapter (0.5.0)
     polyglot (0.3.5)
     rack (1.5.2)
     rack-cors (0.2.9)
@@ -124,8 +116,6 @@ GEM
     uglifier (2.5.1)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
-    warden (1.2.3)
-      rack (>= 1.0)
 
 PLATFORMS
   ruby
@@ -133,7 +123,6 @@ PLATFORMS
 DEPENDENCIES
   bson_ext
   coffee-rails (~> 4.0.0)
-  devise
   jbuilder (~> 1.2)
   jquery-rails
   mongoid (~> 4.0.0)
