@@ -47,15 +47,19 @@ public class User{
         this.encrypted_password = password;
     }
 
-    /*Public methods helpers */
+    /*
+    * Public methods helpers
+    * ======================/
+
     /** save new user, and save changes (update)*/
     public boolean save(){
         isError = false;
         if(this.id == null){
             /*Create new User*/
-            ApiModule.getService().post(Config.USERS, this, this.saveCallback());
+            ApiModule.getService().post(Config.USERSRESOURCE, this, this.saveCallback());
         }else{
             /*Update User*/
+            ApiModule.getService().put(Config.USERSRESOURCE, this.id, this, this.saveCallback());
         }
         return isError;
     }
@@ -91,7 +95,7 @@ public class User{
 
 
     public void authenticate(){
-         ApiModule.getService().get(Config.USERS,this, new Callback<Object>() {
+         ApiModule.getService().get(Config.USERSRESOURCE,this, new Callback<Object>() {
             @Override
             public void success(Object user, Response response) {
 //                setFirst_name(user.getFirst_name());
@@ -107,7 +111,6 @@ public class User{
             }
         });
     }
-
 
     /*Attributes Encapsulates Fields*/
     public String getFirst_name() {

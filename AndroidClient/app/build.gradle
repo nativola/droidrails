@@ -20,9 +20,6 @@ android {
 }
 
 dependencies {
-    compile files('libs/bolts.jar')
-    compile files('libs/android-support-v4.jar')
-    compile files('libs/facebook-android-sdk-3.16.0.zip')
     compile 'com.squareup.retrofit:retrofit:1.6.1'
     compile 'com.google.android.gms:play-services:4.2.42'
     compile 'com.android.support:appcompat-v7:19.+'

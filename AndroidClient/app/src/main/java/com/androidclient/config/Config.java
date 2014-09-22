@@ -5,8 +5,8 @@ package com.androidclient.config;
  */
 public class Config {
     /*Server url*/
-    public final static String APIURL = "http://localhost:3000";
-
+    public final static String APIURL = "http://192.168.2.156:3000";
     /*Resources endpoints*/
-    public final static String USERS = "users";
+    public final static String USERSRESOURCE = "users";
+
 }
