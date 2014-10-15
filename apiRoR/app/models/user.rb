@@ -14,11 +14,11 @@ class User
   field :remember_created_at, type: Time
 
   #Setting the auth token#
-  before_save :ensure_authentication_token
-  before_save :ensure_encrypted_password
+  #before_save :ensure_authentication_token
+  #before_save :ensure_encrypted_password
   #File Validations#
-  validates_presence_of :first_name, :last_name, :email, :encrypted_password
-  validates_uniqueness_of :email, :authentication_token
+  #validates_presence_of :first_name, :last_name, :email, :encrypted_password
+  #validates_uniqueness_of :email, :authentication_token
 
   def ensure_authentication_token
     if authentication_token.blank?
