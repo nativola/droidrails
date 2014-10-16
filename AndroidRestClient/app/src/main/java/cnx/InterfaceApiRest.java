@@ -3,10 +3,14 @@ package cnx;
 
 import com.google.gson.Gson;
 
+import org.json.JSONArray;
 import org.json.JSONObject;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
+import dto.User;
 import retrofit.Callback;
 import retrofit.http.Body;
 import retrofit.http.DELETE;
@@ -28,12 +32,15 @@ public interface InterfaceApiRest {
     void post(@Path("resource") String resource,   @Body Object obj, Callback<Object> cb);
 
     @GET("/{resource}")
-    void get(@Path("resource")  String resource, Callback<Object> cb);
+    void get(@Path("resource")  String resource, Callback<List> cb);
+
+    @GET("/{resource}/{id}")
+    void show(@Path("resource")  String resource, @Path("id")  String id, Callback<List<Object>> cb);
 
     @PUT("/{resource}/{id}")
     void put(@Path("resource")  String resource, @Path("id")  String id,  @Body Object obj, Callback<Object> cb);
 
     @DELETE("/{resource}/{id}")
-    void delete(@Path("resource") String resource, @Path("id") String id, @Body Object obj, Callback<Object> cb);
+    void delete(@Path("resource") String resource, @Path("id") String id, Callback<Object> cb);
 
 }

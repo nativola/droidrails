@@ -19,7 +19,7 @@ Now you have the server running in your local enviroment.
 ### Setup Android App
 * Install Android Studio
 * Open the project called /AndroidRestClient with Android Studio 
-* this is a IMPORTAN part, update the config file, app/src/main/java/config/Config.java , set your ip address
+* this is an **important**  part, update the config file, app/src/main/java/config/Config.java , set your ip address
 ```java
   public final static String APIURL = "http://192.168.0.0:3000";
 ```

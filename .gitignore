@@ -9,18 +9,18 @@
 *.class
 
 # Generated files
-AndroidClient/bin/
-AndroidClient/gen/
+AndroidRestClient/bin/
+AndroidRestClient/gen/
 
 # Gradle files
-AndroidClient/.gradle
-AndroidClient/build/
+AndroidRestClient/.gradle
+AndroidRestClient/build/
 
 # Local configuration file (sdk path, etc)
 local.properties
 
-AndroidClient/proguard/
-AndroidClient/local.properties
-AndroidClient/.idea/workspace.xml
-AndroidClient.DS_Store
-AndroidClient/build
+AndroidRestClient/proguard/
+AndroidRestClient/local.properties
+AndroidRestClient/.idea/workspace.xml
+AndroidRestClient.DS_Store
+AndroidRestClient/build
