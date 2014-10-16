@@ -9,7 +9,7 @@ class UsersController < ApplicationController
       user = User.create(user_params)
      	if user.valid?
         if user.save
-          return render :json => user
+          return render :json => user.as_json
         end
       end
       render json: user.errors.full_messages 
