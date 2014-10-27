@@ -14,8 +14,7 @@
         android:text="Save"
         android:id="@+id/btn_add_name"
         android:layout_below="@+id/txt_name"
-        android:layout_alignRight="@+id/txt_name"
-        android:layout_alignEnd="@+id/txt_name" />
+        android:layout_toRightOf="@+id/btn_new" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -49,6 +48,14 @@
         android:layout_alignParentStart="true"
         android:layout_alignBottom="@+id/btn_add_name" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Provinces"
+        android:id="@+id/btn_provinces"
+        android:layout_below="@+id/txt_name"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
 
 </RelativeLayout>

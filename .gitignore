@@ -23,4 +23,6 @@ AndroidRestClient/proguard/
 AndroidRestClient/local.properties
 AndroidRestClient/.idea/workspace.xml
 AndroidRestClient.DS_Store
-AndroidRestClient/build
+AndroidRestClient/.idea
+AndroidRestClient/*.log
+AndroidRestClient/app/build.gradle

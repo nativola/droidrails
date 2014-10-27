@@ -22,7 +22,7 @@ class UsersController < ApplicationController
 
   # GET /users
   def index
-    render json: User.all
+    render json: {data: User.all, pag: ''}
   end
  
   # PATCH/PUT /users/:id
